@@ -1,0 +1,68 @@
+body{
+    background-image: url(https://tse2.mm.bing.net/th?id=OIP.fp8kNlKj96YBoaDXF_de3QHaEK&pid=Api&P=0&h=180);background-repeat: no-repeat;background-size: cover;
+}
+
+#parent{
+    width: 25%;
+    
+    border: 1px solid gray;
+    text-align: center;
+    margin: auto;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+
+
+    /* max-width: 600px;
+    margin: auto;
+    background: #2a2a40;
+    padding: 20px;
+    box-shadow: 0px 0px 10px gray;
+    border-radius: 8px; */
+}
+
+input{
+    width: 87%;
+    margin-bottom: 20px;
+    padding: 10px;
+
+
+    /* background: #3a3a55;
+    color: #ffffff; */
+}
+
+input:focus{
+    background-color: beige;
+}
+
+#parent button{
+    padding: 10px;
+    width: 50%;
+    border: none;
+    background-color: rgb(137, 227, 137);
+    margin-bottom: 30px;
+
+
+    /* width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border: none;
+    border-radius: 5px; */
+}
+#parent>form>button.hover{
+    color: white;
+    background-color: green;
+    cursor: pointer;
+}
+table{
+    color: white;
+    margin: auto;
+    margin-top: 50px;
+    width: 50%;
+}
+table, td{
+    border: 1px solid rgb(244, 246, 244);
+    border-collapse: collapse;
+    padding: 10px;
+    
+
+}

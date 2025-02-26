@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie List</title>
+    <link rel="stylesheet" href="/day12/assignment/abc.css">
+</head>
+<body>
+    <h1>All Movies</h1>
+    <input type="text" id="search" placeholder="Search by Name or Genre" onkeyup="filterMovies()">
+    <table>
+        <thead>
+            <tr>
+                <th>Movie Name</th>
+                <th>Description</th>
+                <th>Release Year</th>
+                <th>IMDb Rating</th>
+                <th>Genre</th>
+                <th>Poster</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="movieList"></tbody>
+    </table>
+    <button onclick="window.location.href='abc.html'">Back to Home</button>
+    <script src="/day12/assignment/abc.js"></script>
+</body>
+</html>
