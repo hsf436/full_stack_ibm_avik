@@ -46,3 +46,11 @@ form.addEventListener("submit", (e) => {
 
 
 })
+
+
+
+const pivot = arr[arr.length - 1];
+        const left = arr.filter(el => el < pivot);
+        const right = arr.filter(el => el > pivot);
+        const middle = arr.filter(el => el === pivot);
+        return [...quickSort(left), ...middle, ...quickSort(right)];
