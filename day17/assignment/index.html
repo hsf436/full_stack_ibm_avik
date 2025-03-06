@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">YouTube</div>
+        <input type="text" placeholder="Search" class="search-bar" id="searchInput">
+
+        <button onclick="searchVideos()">🔍</button>
+        
+        <div class="profile">🔔 + Profile</div>
+        
+    </header>
+
+    <div class="categories">
+        <button class="category active">All</button>
+        <button class="category">Gaming</button>
+        <button class="category">Music</button>
+        <button class="category">EA Sports FC Mobile</button>
+        <button class="category">Web Development</button>
+        <button class="category">Computer programming</button>
+        <button class="category">Mixes</button>
+        <button class="category">Security hackers</button>
+        <button class="category">Indian pop music</button>
+        <button class="category">Study Skills</button>
+    </div>
+    
+    <div class="container">
+        <nav class="sidebar">
+            <ul>
+                <li onclick="navigate('home')">Home</li>
+                <li onclick="navigate('shorts')">Shorts</li>
+                <li onclick="navigate('subscriptions')">Subscriptions</li><hr>
+                <li onclick="navigate('you')">You</li>
+                <li onclick="navigate('history')">History</li>
+                <li onclick="navigate('playlists')">Playlists</li>
+                <li onclick="navigate('Your videos')">Your videos</li>
+                <li onclick="navigate('Your Courses')">Your Courses</li>
+                <li onclick="navigate('Watch later')">Watch later</li>
+                <li onclick="navigate('Liked Videos')">Liked Videos</li><hr>
+                <li onclick="navigate('Subscriptions')">Subscriptions</li>
+                <li onclick="navigate('Mr.Beast')">Mr.Beast</li>
+                <li onclick="navigate('CarryMinati')">CarryMinati</li>
+                <li onclick="navigate('Zendria')">Zendria</li>
+                <li onclick="navigate('Fifa')">Fifa</li>
+                <li onclick="navigate('RockstarGames')">RockstarGames</li><hr>
+                <li onclick="navigate('Explore')">Explore</li>
+                <li onclick="navigate('Trending')">Trending</li>
+                <li onclick="navigate('Shopping')">Shopping</li>
+                <li onclick="navigate('Music')">Music</li>
+                <li onclick="navigate('Films')">Films</li>
+                <li onclick="navigate('Podcast')">Podcast</li>
+                <li onclick="navigate('couses')">couses</li>
+                <li onclick="navigate('sport')">sport</li><hr>
+                <li onclick="navigate('More from YouTube')">More from YouTube</li>
+                <li onclick="navigate('YouTube Premium')">YouTube Premium</li>
+                <li onclick="navigate('YouTube Studio')">YouTube Studio</li>
+                <li onclick="navigate('YouTube Music')">YouTube Music</li>
+                <li onclick="navigate('YouTube Music')">YouTube Music</li>
+                <li onclick="navigate('YouTube Kids')">YouTube Kids</li><hr>
+                <li onclick="navigate('Settings')">Settings</li>
+                <li onclick="navigate('Report history')">Report history</li>
+                <li onclick="navigate('Help')">Help</li>
+                <li onclick="navigate('Send feedback')">Send feedback</li><hr>
+                <li onclick="navigate('Copyright')">Copyright</li>
+        </nav>
+        <main>
+            <div class="video-grid" id="videoGrid">
+                <div class="video">
+                    <img src="https://tse3.mm.bing.net/th?id=OIP.dvKl7mBOSq01p_H5LpPOBgHaEK&pid=Api&P=0&h=180" alt="Video Thumbnail">
+                    <p>japan 2025 intake</p>
+                </div>
+                <div class="video">
+                    <img src="https://tse3.mm.bing.net/th?id=OIP.dvKl7mBOSq01p_H5LpPOBgHaEK&pid=Api&P=0&h=180" alt="Video Thumbnail">
+                    <p>japan heritage</p>
+                </div>
+                <div class="video">
+                    <img src="https://tse3.mm.bing.net/th?id=OIP.dvKl7mBOSq01p_H5LpPOBgHaEK&pid=Api&P=0&h=180" alt="Video Thumbnail">
+                    <p>japan legacy</p>
+                </div>
+                <div class="video">
+                    <img src="https://tse3.mm.bing.net/th?id=OIP.dvKl7mBOSq01p_H5LpPOBgHaEK&pid=Api&P=0&h=180" alt="Video Thumbnail">
+                    <p>japan legacy</p>
+                </div>
+                <div class="video">
+                    <img src="https://tse3.mm.bing.net/th?id=OIP.dvKl7mBOSq01p_H5LpPOBgHaEK&pid=Api&P=0&h=180" alt="Video Thumbnail">
+                    <p>japan legacy</p>
+                </div>
+                <div class="video">
+                    <img src="https://tse3.mm.bing.net/th?id=OIP.dvKl7mBOSq01p_H5LpPOBgHaEK&pid=Api&P=0&h=180" alt="Video Thumbnail">
+                    <p>japan legacy</p>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+

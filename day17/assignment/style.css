@@ -1,0 +1,199 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ff0000;
+    padding: 10px;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.search-bar {
+    padding: 5px;
+    width: 300px;
+}
+
+
+.categories {
+    display: flex;
+    gap: 10px;
+    padding: 10px 20px;
+    background-color: rgb(243, 238, 238);
+    overflow-x: auto;
+    white-space: nowrap;
+    position: fixed;
+    top: 50px; /* Just below the header */
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+
+.categories::-webkit-scrollbar {
+    height: 5px;
+}
+
+.categories::-webkit-scrollbar-thumb {
+    background: #824949;
+    border-radius: 10px;
+}
+
+.category {
+    background: #de3636;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.category.active {
+    background: white;
+    color: rgb(170, 18, 18);
+}
+
+
+
+
+.container {
+    display: flex;
+    margin-top: 50px; /* Adds space below the fixed header */
+}
+
+.sidebar {
+    width: 200px;
+    background: #f4f4f4;
+    padding: 15px;
+    height: 80vh;
+    overflow-y: auto;
+    position: fixed;
+    top: 50px; /* Starts below the header */
+    left: 0;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    max-height: 75vh;
+    overflow-y: auto;
+}
+
+.sidebar ul li {
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* .video-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    padding: 20px;
+    flex-grow: 1;
+    margin-left: 220px;
+}
+
+.video-card {
+    border: 1px solid #ddd;
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.video-card img {
+    width: 100%;
+    height: auto;
+} */
+
+
+
+/* Video Grid - 2 Rows and 3 Columns */
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Ensures 3 equal-width columns */
+    grid-template-rows: repeat(2, auto);  /* 2 rows */
+    gap: 15px; /* Adds spacing between images */
+    padding: 1px;
+    margin-top: 10px; /* Slight gap below the categories */
+    margin-left: 220px; /* Leaves space for the sidebar */
+    width: calc(100% - 240px); /* Ensures full width minus sidebar */
+    box-sizing: border-box;
+}
+
+/* Video Card Styling */
+.video-card {
+    border: none; /* Removes unnecessary borders */
+    padding: 0;
+    cursor: pointer;
+    text-align: center;
+    width: 100%; /* Makes sure it fills the grid cell */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Ensure Images Fit Well */
+.video-card img {
+    width: 100%;
+    height: 300px; /* Uniform height for all images */
+    object-fit: cover; /* Ensures image fills the area without distortion */
+    border-radius: 8px; /* Optional: Rounded corners */
+}
+
+/* Center the Text Below Each Image */
+.video-card p {
+    margin-top: 5px; /* Reduces space below the image */
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    max-width: 90%; /* Prevents long titles from overflowing */
+}
+
+
+
+
+
+
+/* Custom Scrollbar for Sidebar */
+.sidebar::-webkit-scrollbar {
+    width: 5px;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+    background: #bbb;
+    border-radius: 3px;
+}
+
+.sidebar::-webkit-scrollbar-track {
+    background: #f4f4f4;
+}
+
+/* Adjust Sidebar to Start Below Categories */
+.sidebar {
+    position: fixed;
+    top: 90px; /* Adjusted to start below categories */
+    left: 0;
+    width: 200px;
+    background: #f4f4f4;
+    padding: 15px;
+    height: calc(100vh - 90px); /* Adjusted for remaining viewport height */
+    overflow-y: auto;
+}
+
+/* Adjust Video Grid Placement */
+.video-grid {
+    margin-top: 90px; /* Push down below categories */
+    margin-left: 220px; /* Leaves space for the sidebar */
+}
+
