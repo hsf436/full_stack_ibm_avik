@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>GOOD GUY</title>
+</head>
+<body>
+  <h1>Dogs Available For Adoption</h1>
+  <div class="container">
+    <!-- Filter Section -->
+    <aside class="filter-section">
+      <button id="clear-filters">Clear all filters</button>
+
+      <label>Pet Type</label>
+      <select id="pet-type">
+        <option value="Dog">Dog</option>
+      </select>
+
+      <label>Search by State</label>
+      <select id="state-filter">
+        <option value="">Select state here...</option>
+        <option value="Karnataka">Karnataka</option>
+        <option value="Haryana">Haryana</option>
+        <option value="Maharashtra">Maharashtra</option>
+        <option value="Andhra Pradesh">Andhra Pradesh</option>
+        <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+        <option value="Bihar">Bihar</option>
+        <option value="Odisha">Odisha</option>
+        <option value="Tripura">Tripura</option>
+      </select>
+
+      <label>Search by City</label>
+      <select id="city-filter">
+        <option value="">Select city here...</option>
+        <option value="Bengaluru">Bengaluru</option>
+        <option value="Faridabad">Faridabad</option>
+        <option value="Vasai-Virar">Vasai-Virar</option>
+        <option value="Amravati">Amravati</option>
+        <option value="Guwahati">Guwahati</option>
+        <option value="Patna">Patna</option>
+        <option value="Bhubaneswar">Bhubaneswar</option>
+        <option value="Agartala">Agartala</option>
+      </select>
+
+      <button id="apply-filter">Apply Filter</button>
+      <button onclick="location.href='index.html'" class="home-button">Go to Home</button>
+    </aside>
+
+    <!-- Pets List Section -->
+    <section class="pets-section" id="pets-section">
+      <!-- Pets will be loaded here by JavaScript -->
+    </section>
+  </div>
+
+  <script src="cid.js"></script>
+</body>
+</html>

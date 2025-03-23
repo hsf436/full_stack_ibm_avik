@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+    margin-top: 20px;
+  }
+  
+  .container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  /* Filter Section */
+  .filter-section {
+    width: 250px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  label {
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  select, button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  button {
+    background-color: #ff6600;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #e65c00;
+  }
+  
+  /* Pets Section */
+  .pets-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    flex: 1;
+  }
+  
+  .pet-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  .pet-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .pet-card h3 {
+    margin: 10px 0;
+    color: #333;
+  }
+  
+  .pet-card p {
+    color: #666;
+  }
+  
+  .contact-link {
+    color: #007bff;
+    cursor: pointer;
+  }
+  
+  .contact-link:hover {
+    text-decoration: underline;
+  }
+  
+  .share-icons img {
+    width: 30px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
